@@ -1,0 +1,77 @@
+<!--index.wxml-->
+
+<view class="container">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view class="userinfo">
+    <view  class="userinfo-nickname">沙沙</view>
+    <image class="userinfo-edit" src="../../image/edit.png" 
+      bindtap="bindEditProfileTap"></image>
+  </view>
+</view>
+<scroll-view scroll-y="true" style="height:inline-block">
+<view class="table">
+    <view class="tr">
+        <view class="th">LIFTS</view>
+        <view class="th">1RM</view>
+        <view class="th">2RM</view>
+        <view class="th">3RM</view>
+    </view>
+    <view class="tr">
+        <view class="td">push press</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+    <view class="tr">
+        <view class="td">strict pull up</view>
+        <view class="td">2</view>
+        <view class="td">3</view>
+        <view class="td">4</view>
+    </view>
+</view>
+</scroll-view>
+<!--relative（相对）以及absolute（绝对）。
+用absolute定位时，要把其上一级的元素样式属性position设置为relative。
+也就是说，position的属性值的效果，直接受其容器样式中position属性值影响。
+例如如下A-B的嵌套结构
+<div id="A">
+ <div id="B">
+ </div>
+</div>
+当A的position为relative时，B的position为absolute才有效。
+这时候left:0、top:0就不再针对窗口文档，而是针对id为A的这个div了。-->
+
+
+
+  
+

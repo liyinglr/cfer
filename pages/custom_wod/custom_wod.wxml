@@ -1,0 +1,22 @@
+<import src="../../components/my-tabbar/my-tabbar" />
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <!--主体-->
+  <view class="page__bd">
+  <!-- <view class="weui-tab"> -->
+    <view>
+        <template is="zan-tab" data="{{tab: tab, componentId: 'tab'}}">
+          </template>
+    </view>
+     <view class="weui-tab__panel">
+      <wod-part class="weui-tab__content" part-index="0" part-hidden="{{activeIndex != 0}}">选项一的内容</wod-part>
+      <wod-part class="weui-tab__content" part-index="1" part-hidden="{{activeIndex != 1}}">选项二的内容</wod-part>
+      <wod-part class="weui-tab__content" part-index="2" part-hidden="{{activeIndex != 2}}">选项三的内容</wod-part>
+            </view> 
+    <!-- <view class='weui-tab__panel' wx:for="{{tabContents}}" wx:key="{{id}}">
+      <wod-part class="weui-tab__content" binddeletepart="deletePart" 
+        part-index="{{item.id}}" part-hidden="{{activeIndex != item.id}}"
+        part-style="display:{{activeIndex != item.id?'none':'block'}}">
+      </wod-part>
+    </view> -->
+  </view>
+</view>

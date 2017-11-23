@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wod-part": "/components/wod-part/wod-part"
+  }
+}

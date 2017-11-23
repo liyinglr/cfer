@@ -1,0 +1,56 @@
+/* pages/box/box.wxss */
+.list{
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+}
+
+.list_item{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /*border: 1rpx solid red;*/
+    margin-bottom: 10rpx;
+    padding:5rpx;
+}
+.item_image{
+    padding: 15rpx;
+    width: 196rpx;
+    height: 196rpx;
+}
+.list_item_detail{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+.list_item_title{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 800;
+    text-transform: capitalize;/*文本中的每个单词以大写字母开头。*/   
+}
+.box_address{
+    display: flex;
+    flex-direction: row;
+    margin: 10rpx;
+}
+.box_address_text{
+    font-size: 13px;
+    text-transform: uppercase;   
+}
+.tag{
+    background-color: #edf1f2;
+    border-radius: 15rpx;
+    padding: 5rpx;
+    margin: 5rpx;
+    font-size: 13px;
+    color: #58666e;
+    white-space: nowrap;
+    display:inline; /*自动适应内容宽度*/
+}
+.tags{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

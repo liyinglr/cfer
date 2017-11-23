@@ -1,0 +1,33 @@
+ .zan-tab{
+   height:48rpx; 
+} 
+.zan-tab__bd{
+  width:auto;
+  display:flex;
+  margin: 5rpx;
+  flex-direction:row;
+  border:2rpx solid #18ad19; 
+  border-radius: 5rpx;
+  background-color:#fff
+}
+.zan-tab__bd--fixed{
+  position:fixed;top:0;z-index:2
+}
+.zan-tab__item{
+  flex:1;
+   text-align:center; 
+   border-right: 1px solid green;   
+  font-size:14px;
+  color:#666;
+  background: #fff;
+  /*以下几个属性使得超出宽度显示省略号*/
+  text-overflow:ellipsis; 
+  overflow: hidden;  
+  white-space: nowrap;
+}
+ .zan-tab__item--selected{
+  background: #18ad19;
+} 
+.zan-tab__bd--scroll{display:block;white-space:nowrap}
+.zan-tab__bd--scroll .zan-tab__item{min-width:80px}
+.zan-tab__bd--scroll .zan-tab__text{margin:0 20px}

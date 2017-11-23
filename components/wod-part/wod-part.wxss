@@ -1,0 +1,2 @@
+/* components/wod-part/wod-part.wxss */
+@import '../../assets/styles/weui.wxss';

@@ -1,0 +1,2 @@
+/* pages/custom_wod/custom_wod.wxss */
+@import "../../components/my-tabbar/my-tabbar.wxss";

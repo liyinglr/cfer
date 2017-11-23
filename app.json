@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/wod/wod",
+    "pages/custom_wod/custom_wod",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/box/box",
+    "pages/edit/record/record",
+    "pages/edit/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#18ad19",
+    "navigationBarTitleText": "CFer",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#18ad19",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/custom_wod/custom_wod",
+        "text": "Custom WOD",
+        "iconPath": "image/custom_wod.png",
+        "selectedIconPath": "image/custom_wod_selected.png"
+      },
+      {
+        "pagePath": "pages/wod/wod",
+        "text": "WOD",
+        "iconPath": "image/wod.png",
+        "selectedIconPath": "image/wod_selected.png"
+      },
+      {
+        "pagePath": "pages/box/box",
+        "text": "BOX",
+        "iconPath": "image/box.png",
+        "selectedIconPath": "image/box_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "MY",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my_selected.png"
+      }
+    ]
+  }
+}

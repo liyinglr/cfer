@@ -1,0 +1,5 @@
+<!--pages/wod/wod.wxml-->
+<view class='wrap'>
+  <wxc-steps steps="{{steps}}" current="{{current}}">
+  </wxc-steps>
+</view>

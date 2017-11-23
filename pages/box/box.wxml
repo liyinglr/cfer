@@ -1,0 +1,97 @@
+<view class="list">
+<view class="list_item">
+  <image class="item_image" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" alt=""/>
+
+  <view class="list_item_detail">
+      <view class="list_item_title">
+          hyblum crossfit
+      </view>
+      <view class="box_address">
+        <!--<image class="box_address_before" src="../../image/address.png"/>-->
+          <text class="fa fa-map-marker box_address_text">suzhou</text>
+      </view>
+      <view class="tags">
+          <view class="tag">官方认证</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+      </view>
+  </view>
+</view>
+<view class="list_item">
+  <image class="item_image" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" alt=""/>
+
+  <view class="list_item_detail">
+      <view class="list_item_title">
+          hyblum crossfit
+      </view>
+      <view class="box_address">
+        <!--<image class="box_address_before" src="../../image/address.png"/>-->
+          <text class="fa fa-map-marker box_address_text">suzhou</text>
+      </view>
+      <view class="tags">
+          <view class="tag">官方认证</view>
+          <view class="tag">中国CrossFit联盟</view>
+      </view>
+  </view>
+</view>
+<view class="list_item">
+  <image class="item_image" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" alt=""/>
+
+  <view class="list_item_detail">
+      <view class="list_item_title">
+          hyblum crossfit
+      </view>
+      <view class="box_address">
+        <!--<image class="box_address_before" src="../../image/address.png"/>-->
+          <text class="fa fa-map-marker box_address_text">suzhou</text>
+      </view>
+      <view class="tags">
+          <view class="tag">官方认证</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+      </view>
+  </view>
+</view>
+<view class="list_item">
+  <image class="item_image" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" alt=""/>
+
+  <view class="list_item_detail">
+      <view class="list_item_title">
+          hyblum crossfit
+      </view>
+      <view class="box_address">
+        <!--<image class="box_address_before" src="../../image/address.png"/>-->
+          <text class="fa fa-map-marker box_address_text">suzhou</text>
+      </view>
+      <view class="tags">
+          <view class="tag">官方认证</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+      </view>
+  </view>
+</view>
+<view class="list_item">
+  <image class="item_image" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" alt=""/>
+
+  <view class="list_item_detail">
+      <view class="list_item_title">
+          hyblum crossfit
+      </view>
+      <view class="box_address">
+        <!--<image class="box_address_before" src="../../image/address.png"/>-->
+          <text class="fa fa-map-marker box_address_text">suzhou</text>
+      </view>
+      <view class="tags">
+          <view class="tag">官方认证</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+          <view class="tag">中国CrossFit联盟</view>
+      </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,26 @@
+<!--components/wod-part/wod-part.wxml-->
+<view class='weui-tab__content' hidden='{{partHidden}}'>
+  <view class="weui-cells__title">Part {{partIndex}}</view>
+  <view class="weui-cells__title">TITLE & INSTRCUTIONS</view>
+  <view class='weui-cells weui-cells_after-title'>
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="Warm, etc"/>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd">
+        <picker bindchange="bindWodChange" value="{{defaultWod}}" range="{{wodsName}}">
+          <view class="weui-select">{{wodsName[defaultWod]}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__bd weui-cell__bd_in-select-before">
+          <input class="weui-input" placeholder="请输入号码" />
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title">EXERCISES</view>
+  <button class='weui-btn' type="default">Add Exercises</button>
+  <button class='weui-btn' type="warn" bindtap='_btnDeletePartBind' 
+    hidden="{{!partIndex}}">Delete Part</button>
+</view>
