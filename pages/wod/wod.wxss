@@ -1,0 +1,14 @@
+
+.part-name{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 20rpx; 
+}
+.part-content{
+  display: flex;
+  padding: 20rpx;
+  flex-direction: row;
+}
+.reps{
+  margin-right: 40rpx;
+}

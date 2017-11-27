@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "testcom":"/components/testcom/testcom",
-    "wxc-steps":"/dist/packages/@minui/wxc-steps/dist/index"
+    "wxc-steps":"/dist/packages/@minui/wxc-steps/dist/index",
+    "wxc-flex": "/dist/packages/@minui/wxc-flex/dist/index"
   }
 }
