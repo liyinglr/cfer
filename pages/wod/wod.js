@@ -5,17 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    steps: [{
-      title: '步骤1',
-      desc: '注册，登录'
-    }, {
-      title: '步骤2',
-      desc: '进入详情页，点击立即购买'
-    }, {
-      title: '步骤3',
-      desc: '支付成功'
-    }],
-    current: 1
+    part:[
+      {
+        image:'../../image/reps.png',
+        title:'3 reps',
+      },
+      {
+        image: '../../image/cal.png',
+        title: '10 cal',
+      },
+      {
+        image: '../../image/lb.png',
+        title: '75 lbs',
+      },
+      {
+        image: '../../image/time.png',
+        title: '4 mins',
+      }
+    ],
+    hideview:true
   },
   /**
    * 生命周期函数--监听页面加载

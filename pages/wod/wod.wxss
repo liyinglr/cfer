@@ -8,7 +8,40 @@
   display: flex;
   padding: 20rpx;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .reps{
   margin-right: 40rpx;
+  margin-bottom: 10rpx;
+  height: 36rpx;
+  width: auto;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+.rep-text{
+  flex: 1
+}
+.rep-image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.set{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 48rpx;
+  background: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.set-none{
+  display: none;
+}
+.set-content{
+  color: white;
+  padding: 5rpx;
+  font-size: 32rpx;
 }

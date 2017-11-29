@@ -12,11 +12,20 @@
         <view class="kind-list-item" style='margin:10rpx'>
           <view class="kind-list-item-bd kind-list-item-bd-show">
             <view class="part-name">Front Squats</view>
-            <view>
-              <wxc-flex class="part-content" dir="left">
-                <view class='fa fa-circle-o reps'>3 reps</view>
-                <view class='fa fa-shopping-bag reps'>115lb</view>
-              </wxc-flex>
+            <view>              
+              <view class="part-content">
+                <view  wx:for="{{part}}" wx:key="title">
+                <view class='reps'>
+                  <image src='{{item.image}}' class='rep-image'></image>  
+                  <view class='rep-text'>{{item.title}}</view>
+                </view>
+              </view>
+              </view>
+            </view>
+            <view class="{{hideview?set-none:part-content}}">
+              <view class="set">
+                <view class='set-content'>105lbs</view>
+              </view>
             </view>
           </view>
         </view>
