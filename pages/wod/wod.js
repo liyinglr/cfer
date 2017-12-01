@@ -5,25 +5,74 @@ Page({
    * 页面的初始数据
    */
   data: {
-    part:[
-      {
-        image:'../../image/reps.png',
-        title:'3 reps',
-      },
-      {
-        image: '../../image/cal.png',
-        title: '10 cal',
-      },
-      {
-        image: '../../image/lb.png',
-        title: '75 lbs',
-      },
-      {
-        image: '../../image/time.png',
-        title: '4 mins',
-      }
-    ],
-    hideview:true
+    trains:[
+        {
+            title:"Warm Up",
+            movements:[
+                {
+                    title: "Front Squats",
+                    reps: [
+                        {
+                            image: '../../image/reps.png',
+                            title: '3 reps',
+                        },
+                        {
+                            image: '../../image/cal.png',
+                            title: '10 cal',
+                        }
+                    ],
+                    setResults: ["","",""],
+                    setsCount: 3,
+                    note: "The points of performance, common faults, and corrections carry over from the air squat.The new element of the front squat is the addition of a loaded barbell to the front of the body. The barbell is supported by the torso in the front-rack position."
+                },
+                {
+                    title: "AIR SQUAT",
+                    reps: [
+                        {
+                            image: '../../image/reps.png',
+                            title: '3 reps',
+                        },
+                        {
+                            image: '../../image/cal.png',
+                            title: '10 cal',
+                        }
+                    ],
+                    setResults: [],
+                    setsCount: 0,
+                    note: ""
+                }
+            ]
+        },
+        {
+            title: "WOD",
+            movements: [
+                {
+                    title: "Pull Up",
+                    reps: [
+                        {
+                            image: '../../image/reps.png',
+                            title: '3 reps',
+                        }
+                    ],
+                    setResults: [5, 4, 3, 2],
+                    setsCount:4,
+                    note: "The kipping pull-up is CrossFit’s default pull-up. It allows the athlete to accomplish more work in less time (higher power) due to the hips assisting the upper-body pull. CrossFit recommends athletes have at least one strict pull- up before performing kipping pull- ups."
+                },
+                {
+                    title: "Air Bike",
+                    reps: [
+                        {
+                            image: '../../image/cal.png',
+                            title: '10 cal',
+                        }
+                    ],
+                    setResults: [],
+                    setsCount: 0,
+                    note: ""
+                }
+            ]
+        }
+    ]
   },
   /**
    * 生命周期函数--监听页面加载
@@ -87,5 +136,8 @@ Page({
     //   duration: 1500
     // });
     // console.log(this)
+  },
+  bindTapSet: function(e){
+    console.log(e.currentTarget.dataset)
   }
 })

@@ -31,17 +31,21 @@
   width: 96rpx;
   height: 96rpx;
   border-radius: 48rpx;
-  background: red;
+  background: lightpink;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 40rpx;
 }
 .set-none{
   display: none;
 }
 .set-content{
-  color: white;
+  color: black;
   padding: 5rpx;
   font-size: 32rpx;
+}
+.movement-note{
+    font-size: 30rpx;
 }

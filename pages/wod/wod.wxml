@@ -3,32 +3,34 @@
   <view class='indx-hd'></view>
   <view class='indx-bd'>
     <view class="kind-list">
-        <view class="kind-list-item" style='margin:10rpx'>
-          <view id="1" class="kind-list-item-hd kind-list-item-hd-show">
-              <view class="kind-list-text" style="font-size: 36rpx;">Warm Up</view>
-              <image class="kind-list-img" src=""></image>
-          </view>
-        </view>
-        <view class="kind-list-item" style='margin:10rpx'>
-          <view class="kind-list-item-bd kind-list-item-bd-show">
-            <view class="part-name">Front Squats</view>
-            <view>              
-              <view class="part-content">
-                <view  wx:for="{{part}}" wx:key="title">
-                <view class='reps'>
-                  <image src='{{item.image}}' class='rep-image'></image>  
-                  <view class='rep-text'>{{item.title}}</view>
-                </view>
-              </view>
-              </view>
-            </view>
-            <view class="{{hideview?set-none:part-content}}">
-              <view class="set">
-                <view class='set-content'>105lbs</view>
-              </view>
-            </view>
-          </view>
-        </view>
+		<view wx:for="{{trains}}" wx:key="title" wx:for-item="train" wx:for-index="train_id">
+            <view class="weui-cells__title" style="font-size: 48rpx;">{{train.title}}</view>
+			<!-- <view class="kind-list-item" style='margin:10rpx'>
+				<view class="kind-list-item-hd kind-list-item-hd-show">
+					<view class="weui-cells__title" style="font-size: 36rpx;">{{item.title}}</view>
+				</view>
+			</view> -->
+			<view wx:for="{{train.movements}}" wx:for-item="movements" wx:key="title"  wx:for-index="component_id" class="kind-list-item" style='margin:10rpx'>
+				<view class="kind-list-item-bd kind-list-item-bd-show">
+					<view class="part-name">{{movements.title}}</view><!--卡片title-->					
+					<view class="part-content">
+						<view class='reps'  wx:for="{{movements.reps}}" wx:for-item="movements_rep" wx:key="title">
+							<image src='{{movements_rep.image}}' class='rep-image'></image>  
+							<view class='rep-text'>{{movements_rep.title}}</view>							
+						</view>
+					</view>	
+					<view class="part-content" hidden="{{!movements.setsCount}}" wx:for-index="set_id">					
+						<view class="set"  wx:for="{{movements.setResults}}" wx:for-item="movements_result" wx:key="this" bindtap="bindTapSet"
+						  data-movementid="{{component_id}}" data-trainid="{{train_id}}" data-setid="{{set_id}}">
+							<view class='set-content'>{{movements_result}}</view>
+						</view>
+					</view>	
+					<view class="part-content" hidden="{{!movements.note}}" style='border-top:1rpx solid lightgrey'>					
+						<view class='movement-note'>{{movements.note}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
   </view>
   </view>
 </view>
