@@ -1,6 +1,8 @@
 // pages/wod/wod.js
+var movementId = 0, trainId = 0, setId=0;
+var inputValue="";
 Page({
-
+    
   /**
    * 页面的初始数据
    */
@@ -72,7 +74,9 @@ Page({
                 }
             ]
         }
-    ]
+    ],
+    value:"",
+    focus:false
   },
   /**
    * 生命周期函数--监听页面加载
@@ -128,16 +132,32 @@ Page({
   onShareAppMessage: function () {
   
   },
-  bindView: function(){ 
-    //   console.log(this)   
-    //   message.show.call(this,{
-    //   content: '请输入内容',
-    //   icon: 'info',
-    //   duration: 1500
-    // });
-    // console.log(this)
-  },
   bindTapSet: function(e){
     console.log(e.currentTarget.dataset)
+    movementId = e.currentTarget.dataset.movementid;
+    trainId = e.currentTarget.dataset.trainid;
+    setId = e.currentTarget.dataset.setid;
+	inputValue=""
+	if(movementId>=0 && trainId>=0 && setId>=0){
+		let data = this.data;
+		inputValue = data.trains[trainId].movements[movementId].setResults[setId]
+	}
+    this.setData({ value:inputValue,focus:true})
+	let dialogComponent = this.selectComponent(".wxc-dialog");
+	dialogComponent && dialogComponent.show();
+  },
+  onConfirm: function(e){
+    console.log(e)
+	let dialogComponent = this.selectComponent(".wxc-dialog");
+	dialogComponent && dialogComponent.hide();	
+    this.setData({ value: "", focus: false })
+
+	let data = this.data;
+	data.trains[trainId].movements[movementId].setResults[setId] = inputValue
+	this.setData(data)
+	console.log(inputValue);
+  },
+  onBindInput: function(e){
+	inputValue = e.detail.value;
   }
 })

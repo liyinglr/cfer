@@ -43,7 +43,6 @@
 }
 .set-content{
   color: black;
-  padding: 5rpx;
   font-size: 32rpx;
 }
 .movement-note{

@@ -5,11 +5,6 @@
     <view class="kind-list">
 		<view wx:for="{{trains}}" wx:key="title" wx:for-item="train" wx:for-index="train_id">
             <view class="weui-cells__title" style="font-size: 48rpx;">{{train.title}}</view>
-			<!-- <view class="kind-list-item" style='margin:10rpx'>
-				<view class="kind-list-item-hd kind-list-item-hd-show">
-					<view class="weui-cells__title" style="font-size: 36rpx;">{{item.title}}</view>
-				</view>
-			</view> -->
 			<view wx:for="{{train.movements}}" wx:for-item="movements" wx:key="title"  wx:for-index="component_id" class="kind-list-item" style='margin:10rpx'>
 				<view class="kind-list-item-bd kind-list-item-bd-show">
 					<view class="part-name">{{movements.title}}</view><!--卡片title-->					
@@ -19,8 +14,8 @@
 							<view class='rep-text'>{{movements_rep.title}}</view>							
 						</view>
 					</view>	
-					<view class="part-content" hidden="{{!movements.setsCount}}" wx:for-index="set_id">					
-						<view class="set"  wx:for="{{movements.setResults}}" wx:for-item="movements_result" wx:key="this" bindtap="bindTapSet"
+					<view class="part-content" hidden="{{!movements.setsCount}}" >					
+						<view class="set"  wx:for="{{movements.setResults}}" wx:for-item="movements_result" wx:key="this" bindtap="bindTapSet" wx:for-index="set_id"
 						  data-movementid="{{component_id}}" data-trainid="{{train_id}}" data-setid="{{set_id}}">
 							<view class='set-content'>{{movements_result}}</view>
 						</view>
@@ -31,6 +26,9 @@
 				</view>
 			</view>
 		</view>
-  </view>
+	</view>
+	<wxc-dialog class="wxc-dialog" confirm-text="Confirm" bindconfirm="onConfirm">
+		<input class="input" placeholder="Post comments" bindinput="onBindInput" value="{{value}}"/>
+	</wxc-dialog>
   </view>
 </view>
