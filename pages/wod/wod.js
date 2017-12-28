@@ -9,34 +9,37 @@ Page({
   data: {
     trains:[
         {
-            title:"Warm Up",
+            title:"Complete 3 rounds for time",
             movements:[
                 {
                     title: "Front Squats",
                     reps: [
                         {
                             image: '../../image/reps.png',
-                            title: '3 reps',
-                        },
-                        {
-                            image: '../../image/cal.png',
-                            title: '10 cal',
+                            title: '185lbs',
                         }
                     ],
                     setResults: ["","",""],
-                    setsCount: 3,
-                    note: "The points of performance, common faults, and corrections carry over from the air squat.The new element of the front squat is the addition of a loaded barbell to the front of the body. The barbell is supported by the torso in the front-rack position."
+                    setsCount: 3
                 },
                 {
-                    title: "AIR SQUAT",
+                    title: "Chest To Bar Pulls Ups",
                     reps: [
                         {
                             image: '../../image/reps.png',
-                            title: '3 reps',
-                        },
+                            title: '20 reps',
+                        }
+                    ],
+                    setResults: [],
+                    setsCount: 0,
+                    note: ""
+                },
+                {
+                    title: "DU",
+                    reps: [
                         {
-                            image: '../../image/cal.png',
-                            title: '10 cal',
+                            image: '../../image/reps.png',
+                            title: '50 reps',
                         }
                     ],
                     setResults: [],
